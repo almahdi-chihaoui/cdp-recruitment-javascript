@@ -1,6 +1,6 @@
 const { expect, test } = require('@jest/globals');
-const ops = require('..');
-const testData = require('./data');
+const ops = require('../ops');
+const testData = require('./test-data');
 
 const getAnimals = (data) => {
   return data.reduce((acc, currCountry) => {
