@@ -27,8 +27,24 @@ const filter = (data, pattern) => {
             people: peopleWithGoodAnimals,
         }])
     }, []);
+};
+
+const count = (data) => {
+    return data.map(country => {
+        const people = country
+            .people
+            .map(person => ({
+                name: `${person.name} [${person.animals.length}]`,
+                animals: person.animals.map(animal => Object.assign({}, animal)), // to avoid object mutability issues
+            }));
+        return {
+            name: `${country.name} [${people.length}]`,
+            people,
+        };    
+    });
 }
 
 module.exports = {
+    count,
     filter,
 }
