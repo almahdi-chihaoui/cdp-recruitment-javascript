@@ -1,0 +1,19 @@
+{
+  "name": "cdp-recruitment-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almahdi-chihaoui/cdp-recruitment-javascript.git"
+  },
+  "author": "Mahdi Chihaoui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almahdi-chihaoui/cdp-recruitment-javascript/issues"
+  },
+  "homepage": "https://github.com/almahdi-chihaoui/cdp-recruitment-javascript#readme"
+}
