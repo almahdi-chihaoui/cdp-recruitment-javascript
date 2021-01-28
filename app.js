@@ -9,8 +9,7 @@ const main = () => {
     const arg = process.argv[2]
 
     if (!arg) {
-        console.error(`
-            No argument was provided, please refer to the docs.
+        console.error(`No argument was provided, please refer to the docs.
             */ "--filter=[value]": to filter data.
             */ "--count": to return data with people/animals count.
         `);
@@ -48,8 +47,7 @@ const main = () => {
         return;
     }
 
-    console.error(`
-            Invalid argument was provided, please refer to the docs.
+    console.error(`Invalid argument was provided, please refer to the docs.
             */ "--filter=[value]": to filter data.
             */ "--count": to return data with people/animals count.
         `);
