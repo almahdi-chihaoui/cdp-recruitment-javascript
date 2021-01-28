@@ -1,3 +1,4 @@
+'use strict'
 
 const filter = (data, pattern) => {
     return data.reduce((acc, currCountry) => {
