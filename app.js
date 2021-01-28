@@ -26,7 +26,7 @@ const main = () => {
         }
 
         // log
-        console.log(`${JSON.stringify(result)}`);
+        console.dir(result, {depth: null, colors: true})
         return;
     }
 
@@ -35,7 +35,7 @@ const main = () => {
         const result = ops.count(data);
 
         // log
-        console.log(`${JSON.stringify(result)}`);
+        console.dir(result, {depth: null, colors: true})
         return;
     }
 }
