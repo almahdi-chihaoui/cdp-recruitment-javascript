@@ -28,7 +28,7 @@ const main = () => {
         // filter
         const result = ops.filter(data, pattern[0]);
 
-        if (!result) {
+        if (!result || result.length === 0) {
             console.error('No data were found!');
             return;
         }
