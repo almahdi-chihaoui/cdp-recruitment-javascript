@@ -15,13 +15,18 @@ const main = () => {
 
     if (arg.startsWith('--filter')) {
         // get pattern
-        const pattern = 'ry';
+        const pattern = arg.match(/(?<==).*$/);
+
+        if(!pattern) {
+            console.error('Invalid or no value provided!');
+            return;
+        }
 
         // filter
-        const result = ops.filter(data, pattern);
+        const result = ops.filter(data, pattern[0]);
 
         if (!result) {
-            console.error('No data were found');
+            console.error('No data were found!');
             return;
         }
 
